@@ -2,9 +2,9 @@ function receivesAFunction(callback){
     return callback()
 }
 function returnsANamedFunction(){
-    return function named() {}
+    function named() {}
+return named
 }
 function returnsAnAnonymousFunction(){
-    return () => {} 
+    return function () {} 
 }
-function any(){}
